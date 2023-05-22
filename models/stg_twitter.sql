@@ -25,7 +25,7 @@ with stg_twitter as (
         Cast(spend as int64) as spend,
         NULL as total_conversions,
         Cast(video_total_views as int64) as video_views
-    from dbt_yyeung.src_promoted_tweets_twitter_all_data
+    from {{ ref('src_promoted_tweets_twitter_all_data')}}
 )
 
 select * from stg_twitter

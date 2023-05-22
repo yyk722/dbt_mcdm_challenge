@@ -25,7 +25,7 @@ with stg_tiktok as (
         Cast(spend as int64) as spend,
         Cast(conversions+skan_conversion as int64) as total_conversions,
         Cast(video_views as int64) as video_views
-    from dbt_yyeung.src_ads_tiktok_ads_all_data
+    from {{ ref('src_ads_tiktok_ads_all_data')}}
 )
 
 select * from stg_tiktok

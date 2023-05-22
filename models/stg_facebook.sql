@@ -25,7 +25,8 @@ with stg_facebook as (
         NULL as revenue,
         Cast(purchase as int64) as total_conversions,
         NULL as video_views
-    from dbt_yyeung.src_ads_creative_facebook_all_data
+    from {{ ref('src_ads_creative_facebook_all_data')}}
 )
+
 
 select * from stg_facebook

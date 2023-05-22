@@ -25,7 +25,7 @@ with stg_bing as (
         Cast(spend as int64) as spend,
         Cast(conv as int64) as total_conversions,
         NULL as video_views
-    from dbt_yyeung.src_ads_bing_all_data
+    from {{ ref('src_ads_bing_all_data')}}
 )
 
 select * from stg_bing
