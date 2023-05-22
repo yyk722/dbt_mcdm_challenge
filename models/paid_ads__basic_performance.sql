@@ -30,7 +30,7 @@ final as (
            campaign_id,
            channel,
            clicks,
-           comments
+           comments,
            creative_id,
            date,
            engagements,
@@ -57,7 +57,7 @@ final as (
            campaign_id,
            channel,
            clicks,
-           comments
+           comments,
            creative_id,
            date,
            engagements,
@@ -84,7 +84,7 @@ final as (
            campaign_id,
            channel,
            clicks,
-           comments
+           comments,
            creative_id,
            date,
            engagements,
@@ -111,7 +111,7 @@ final as (
            campaign_id,
            channel,
            clicks,
-           comments
+           comments,
            creative_id,
            date,
            engagements,

@@ -23,7 +23,7 @@ with stg_facebook as (
         Cast(complete_registration as int64) as registrations,
         Cast(spend as int64) as spend,
         NULL as revenue,
-        NULL as total_conversions,
+        Cast(purchase as int64) as total_conversions,
         NULL as video_views
     from dbt_yyeung.src_ads_creative_facebook_all_data
 )
