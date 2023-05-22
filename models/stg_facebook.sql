@@ -9,7 +9,7 @@ with stg_facebook as (
         Cast(comments as int64) as comments,
         Cast(creative_id as string) as creative_id,
         Cast(date as date) as date,
-        NULL as engagements,
+        Cast(views+likes+shares+clicks+comments as int64) as engagements,
         Cast(likes as int64) as likes,
         Cast(shares as int64) as shares,
         Cast(impressions as int64) as impressions,
